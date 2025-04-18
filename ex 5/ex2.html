@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Você é brasileiro ou estranjeiro</h1>
+
+   <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="verificar" onclick="oquevce()">
+
+    <div id="res"></div>
+
+    <script>  
+
+        function oquevce(){
+           var naciona = document.querySelector('input#nacionalidade').value
+           var res = document.querySelector('div#res')
+        if(naciona.toUpperCase() != 'BRASIL'){
+            res.innerHTML = `<p>você é gringo</p>`
+        }else{
+            res.innerHTML ='<p>Parabens você é brasileiro</p>'
+        } 
+        }
+    </script>
+</body>
+</html>

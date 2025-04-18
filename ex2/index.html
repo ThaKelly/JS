@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando estudo com dom</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 7);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com dom</h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo a usar o<strong> dom</strong></p>
+    <div>clique em mim</div>
+    <script>
+        /*window.document.write(window.document.url)
+        var p1=window.document.*/var p1 = document.getElementsByTagName('p')[1]
+        document.write(p1.innerText)
+    </script>
+</body>
+</html>

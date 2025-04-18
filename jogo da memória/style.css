@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background: url('imagens/minecraft-paisagem.jpg') no-repeat top center;
+    height: 100vh;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+  }
+  
+  #startBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 140px;
+    height: 140px;
+    background-color: #244758;
+    color: white;
+    border-radius: 9px;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .card.revealed {
+    background-color: #53800a;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
